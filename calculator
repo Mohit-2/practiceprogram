@@ -1,0 +1,43 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+char ans;
+int v1,v2;
+float rec;
+printf("choose an operator(=,+,-,/)to perform the operation in c \n");
+scanf ("%c",&ans);
+if (ans=='/')
+{
+printf("division");
+}
+elseif(ans=='*')
+{
+printf("multiplication");
+}
+elseif(ans=='+')
+{
+printf("addition");
+}
+printf("\n enter the first number:");
+scanf("%d",&v1);
+printf("enter the second number:");
+scanf("%d",&v2);
+
+switch(ans)
+{
+case'+':
+rec=v1+v2;
+printf("addition of %d and %d is:%.2f",v1,v2,rec);
+break;
+
+case'-':
+rec=v1-v2;
+printf("subtraction of %d and %d is :%.2f",v1,v2,rec);
+break;
+
+default:
+printf("something is wrong , again check the option");
+}
+return0;
+}
